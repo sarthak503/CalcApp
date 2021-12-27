@@ -1,0 +1,59 @@
+:root {
+  --black-theme: #262626;
+  --body-theme: #efefef;
+  --red-shade: #dd6975;
+  --btn-shadow: #0c0c0c;
+  --btn-angleShadow: #000;
+  --curve-shade: #000000;
+  --ans-shade: #fff;
+  --input-shade: rgb(194, 194, 194);
+}
+.main {
+  margin-top: 10%;
+  margin-left: 35%;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: peru;
+  color: white;
+}
+button {
+  width: 3rem;
+  height: 3rem;
+  margin: 0.3rem;
+  font-weight: bold;
+  color: var(--ans-shade);
+  padding: 10px;
+  font-weight: bold;
+  bottom: 0px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 50%;
+  border: none;
+  background: #262626;
+  box-shadow: 2px 2px 4px var(--btn-shadow),
+    -1px -1px 3px var(--btn-angleShadow);
+}
+button:hover {
+  box-shadow: 0 2px 3px var(--btn-shadow), 0 -1px 3px var(--btn-angleShadow);
+  top: 1px;
+}
+button:active {
+  box-shadow: inset 1px 1px 3px var(--btn-shadow),
+    inset -1px -1px 3px var(--btn-angleShadow);
+  top: 5px;
+}
+.equal,
+.all-clear {
+  background-color: var(--red-shade);
+}
+
+.equal {
+  width: 105px;
+  padding: 5px 10px;
+  border-radius: 35px;
+}
